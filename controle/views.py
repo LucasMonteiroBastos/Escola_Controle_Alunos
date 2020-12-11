@@ -1,4 +1,5 @@
 from django.shortcuts import render
 
 def home(request):
-    return render(request, 'controle.html')
+    nome = 'Alunos'
+    return render(request, 'controle.html', {'nome': nome})
