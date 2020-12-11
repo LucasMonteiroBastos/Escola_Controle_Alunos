@@ -1,0 +1,15 @@
+*.pyc
+*~
+pycache
+.DS_Store
+.env
+/venv/
+~/*.pyc
+#/zmedia/
+.idea/
+settings.py
+_pycache_/
+*.py[cod]
+access.log
+error.log
+rotina*.txt
