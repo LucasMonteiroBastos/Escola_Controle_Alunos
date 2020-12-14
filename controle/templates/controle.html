@@ -11,38 +11,40 @@
     <h1>Controle</h1>
 
 
-    <ul>
+
+    <style type="text/css">
+        p {color:white; font-size: 10px;}
+        .center {display: block; margin: 0 auto;}
+        #button-go, #button-back {border: solid 1px black;}
+    </style>
+
+
+    <div>
          <h3>Alunos</h3>
         {% for alunos in aluno %}
         <li>{{alunos.nome}}</li>
         {% endfor %}
-    </ul>
+    </div>
 
-    <ul>
-         <h3>Matriculas</h3>
-        {% for alunos in aluno %}
-        <li>{{alunos.matricla}}</li>
-        {% endfor %}
-    </ul>
 
-    <ul>
+    <div>
          <h3>Turnos</h3>
         {% for alunos in aluno %}
         <li>{{alunos.turno}}</li>
         {% endfor %}
-    </ul>
-    <ul>
+    </div>
+    <div>
          <h3>Turmas</h3>
         {% for alunos in aluno %}
         <li>{{alunos.turma}}</li>
         {% endfor %}
-    </ul>
-     <ul>
+    </div>
+     <div>
           <h3>Disciplinas</h3>
         {% for alunos in aluno %}
         <li>{{alunos.disciplina}}</li>
         {% endfor %}
-    </ul>
+    </div>
 
 
 

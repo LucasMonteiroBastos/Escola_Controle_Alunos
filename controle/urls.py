@@ -1,6 +1,9 @@
 from django.urls import path
-from .views import home
+from controle import views
 
 urlpatterns = [
-    path('', home),
+    path('', views.home),
+    path('escola/create/', views.ApiHome.as_view()),
+    path('escola/lista/', views.ApiHomeJson.as_view()),
+    path('escola/Json/', views.Json.as_view()),
 ]
